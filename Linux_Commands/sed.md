@@ -63,5 +63,11 @@ So in case we need to replace / in a file then modify the command as below.
 
 $ sed **'s./tmp./.'** myFile1.txt
 
+--------------------------------------
+
+$ sed 's/green/gold/g' myFile.txt
+
+The g at the end of the command denotes it will replace the word green to gold in the entire file.
+
 
 **_Happy Learning!!_**
