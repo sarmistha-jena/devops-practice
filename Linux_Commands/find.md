@@ -28,5 +28,9 @@ exec command is used to execute some command on the output of find command
 
 {} acts as a loop; it makes sure the exec block is executed on each and every item from find
 
-+ denotes the end of exec command. We can use /; instead of +
+"+" denotes the end of exec command. We can use "\;" instead of "+"
+
+$ find /var/log -type f -name *.log -exec cp --parent {} /backup \;
+
+This command finds all the files with .log extension present in /var/log directory and -exec copies the files along with the directory structure to /backup directory.
 
